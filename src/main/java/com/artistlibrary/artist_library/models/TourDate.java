@@ -1,11 +1,15 @@
 package com.artistlibrary.artist_library.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 import java.util.Date;
 
+@Entity(name="tour_dates")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class TourDate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
