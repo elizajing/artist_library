@@ -16,7 +16,7 @@ public class Artist {
     private Integer artist_id;
     private String artist_name;
     private String record_label;
-    private Date active_since;
+    private String active_since;
 
     public Artist() {
 
@@ -46,11 +46,11 @@ public class Artist {
         this.record_label = record_label;
     }
 
-    public Date getActive_since() {
+    public String getActive_since() {
         return active_since;
     }
 
-    public void setActive_since(Date active_since) {
+    public void setActive_since(String active_since) {
         this.active_since = active_since;
     }
 }
